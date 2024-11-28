@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel's Food World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="options.html" class="nav-item">Options</a></li>
+            <li><a href="recipes.html" class="nav-item">Recipes</a></li>
+            <li><a href="reviews.html" class="nav-item">Reviews</a></li>
+        </ul>
+        <div id="theme-toggle" class="theme-toggle">
+            <button onclick="toggleTheme()">Switch Theme</button>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to Babel's Food World</h1>
+        <p>Discover delicious recipes from around the globe. Explore, learn, and taste!</p>
+    </header>
+
+    <section id="quote">
+        <h2>Quote of the Day</h2>
+        <p id="quoteText">Loading...</p>
+    </section>
+
+    <section id="carousel">
+        <h2>Featured Recipes</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3>Pasta Carbonara</h3>
+                <p>Learn how to prepare the classic Italian Pasta Carbonara.</p>
+                <a href="https://www.youtube.com/watch?v=3AAdKl1UYZs" target="_blank">Watch Recipe Tutorial</a>
+            </div>
+            <div class="carousel-item">
+                <h3>Vegan Tacos</h3>
+                <p>Try these vegan tacos for a healthy, plant-based twist!</p>
+                <a href="https://www.allrecipes.com/recipe/24231/vegan-tacos/" target="_blank">View Recipe</a>
+            </div>
+            <div class="carousel-item">
+                <h3>Sushi Rolls</h3>
+                <p>Master the art of making sushi rolls from scratch.</p>
+                <a href="https://sushiuniversity.com/how-to-make-sushi/" target="_blank">Learn to Make Sushi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Babel's Food World | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
